@@ -21,7 +21,10 @@ const computerScore = 0;
 //Play a single round
 function playRound (humanChoice, computerChoice) {
     const lowHumanChoice = humanChoice.toLowerCase();
-    console.log(lowHumanChoice);
+    
+    //IF human input = rock
+    //IF human input = paper
+    //IF human input = scissor
 }
 
 const humanSelection = getHumanChoice();
