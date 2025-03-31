@@ -19,12 +19,15 @@ const humanScore = 0;
 const computerScore = 0;
 
 //Play a single round
-function playRound () {
-    
+function playRound (humanChoice, computerChoice) {
+    const lowHumanChoice = humanChoice.toLowerCase();
+    console.log(lowHumanChoice);
 }
 
-console.log(getHumanChoice());
+const humanSelection = getHumanChoice();
+const computerSelection = getComputerChoice();
 
+playRound (humanSelection, computerSelection);
 
 
 //System compares user's value with it's own:
