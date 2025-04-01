@@ -28,54 +28,42 @@ function playGame () {
         switch (humanChoice) {
             case "rock":
                 if (computerChoice === "rock") {
-                    alert(`Rock vs Rock, it's a tie!
-                        Score: Human ${humanScore} vs Computer ${computerScore}`);
+                    alert(`Rock vs Rock, it's a tie! Score: Human ${humanScore} vs Computer ${computerScore}`);
                 } else if (computerChoice === "paper") {
                     computerScore += 1;
-                    alert(`Rock vs Paper, you lose!
-                        Score: Human ${humanScore} vs Computer ${computerScore}`);
+                    alert(`Rock vs Paper, you lose! Score: Human ${humanScore} vs Computer ${computerScore}`);
                 } else if (computerChoice === "scissors") {
                     humanScore += 1;
-                    alert(`Rock vs Scissors, you win!
-                        Score: Human ${humanScore} vs Computer ${computerScore}`);
+                    alert(`Rock vs Scissors, you win! Score: Human ${humanScore} vs Computer ${computerScore}`);
                 }
                 break   
 
             case "paper":
                 if (computerChoice === "rock") {
                     humanScore += 1;
-                    alert(`Paper vs Rock, you win!
-                        Score: Human ${humanScore} vs Computer ${computerScore}`);
+                    alert(`Paper vs Rock, you win! Score: Human ${humanScore} vs Computer ${computerScore}`);
                 } else if (computerChoice === "paper") {
-                    alert(`Paper vs Paper, it's a tie!
-                        Score: Human ${humanScore} vs Computer ${computerScore}`);
+                    alert(`Paper vs Paper, it's a tie! Score: Human ${humanScore} vs Computer ${computerScore}`);
                 } else if (computerChoice === "scissors") {
                     computerScore += 1;
-                    alert(`Paper vs Scissors, you lose!
-                        Score: Human ${humanScore} vs Computer ${computerScore}`);
+                    alert(`Paper vs Scissors, you lose! Score: Human ${humanScore} vs Computer ${computerScore}`);
                 }
                 break
 
             case "scissors":
                 if (computerChoice === "rock") {
                     computerScore += 1;
-                    alert(`Scissors vs Rock, you lose!
-                        Score: Human ${humanScore} vs Computer ${computerScore}`);
+                    alert(`Scissors vs Rock, you lose! Score: Human ${humanScore} vs Computer ${computerScore}`);
                 } else if (computerChoice === "paper") {
                     humanScore += 1;
-                    alert(`Scissors vs Paper, you win!
-                        Score: Human ${humanScore} vs Computer ${computerScore}`);
+                    alert(`Scissors vs Paper, you win! Score: Human ${humanScore} vs Computer ${computerScore}`);
                 } else if (computerChoice === "scissors") {
-                    alert(`Scissors vs Scissors, it's a tie!
-                        Score: Human ${humanScore} vs Computer ${computerScore}`);
+                    alert(`Scissors vs Scissors, it's a tie! Score: Human ${humanScore} vs Computer ${computerScore}`);
                 }
                 break
 
         }
     }
-
-    let humanSelection = getHumanChoice();
-    let computerSelection = getComputerChoice();
 
     for (i = 0; i < 5; i++) {
         humanSelection = getHumanChoice();
@@ -92,3 +80,5 @@ function playGame () {
         console.log(`Final score: Human ${humanScore} vs Computer ${computerScore}, it's a tie!`);
     }
 }
+
+playGame();
