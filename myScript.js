@@ -20,11 +20,21 @@ const computerScore = 0;
 
 //Play a single round
 function playRound (humanChoice, computerChoice) {
-    const lowHumanChoice = humanChoice.toLowerCase();
-    
-    //IF human input = rock
-    //IF human input = paper
-    //IF human input = scissor
+    humanChoice = humanChoice.toLowerCase();
+
+    switch (humanChoice) {
+        case "rock":
+            if (computerChoice === "rock") {
+                console.log("Rock vs Rock, it's a tie! Try again")
+            } else if (computerChoice === "paper") {
+                console.log("Rock vs Paper, you lose!")
+            } else if (computerChoice === "scissors") {
+                console.log("Rock vs Scissors, you won!")
+            } else {
+                console.log("Please type one of options")
+            }
+            break
+    }
 }
 
 const humanSelection = getHumanChoice();
